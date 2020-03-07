@@ -1,5 +1,9 @@
 #!/bin/bash
-# Usage: ./check_answer [PROBLEM_NUM] [USER_ANSWER]
+
+if [[ $# == 0 ]] ; then 
+    echo "Usage: ./check_answer.sh [PROBLEM_NUM] [USER_ANSWER]"
+    exit 1
+fi
 
 PROBLEM_NUM=$1
 USER_ANSWER=$2
